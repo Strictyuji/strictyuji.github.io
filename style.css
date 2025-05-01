@@ -22,6 +22,7 @@ body {
 
 /* 共用 box 樣式 */
 .tit {
+  color: #87ceeb;
   border: 2px solid #333;
   background-color: #fff;
   padding: 1em;
