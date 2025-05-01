@@ -23,10 +23,10 @@ body {
 /* 共用 box 樣式 */
 .tit {
   color: #87ceeb;
-  border: 2px solid #333;
-  background-color: #fff;
+  border: 0px solid #333;
+  background-color: #9932cc;
   padding: 1em;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
