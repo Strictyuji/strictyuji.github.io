@@ -1,43 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: sans-serif;
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
-
-header {
-  grid-area: header;
-  background-color: #f8c291;
-  padding: 1em;
-  text-align: center;
-}
-
-nav {
-  grid-area: nav;
-  background-color: #fad390;
-  padding: 1em;
-}
-
-main {
-  grid-area: main;
-  background-color: #f6e58d;
-  padding: 1em;
-}
-
-footer {
-  grid-area: footer;
-  background-color: #95afc0;
-  text-align: center;
-  padding: 1em;
+.box {
+  background:
+    linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.2) 39%,
+        rgba(51, 56, 57, 1) 96%
+      )
+      center center / 400px 200px no-repeat,
+    url(image.png) center no-repeat,
+    rebeccapurple;
 }
