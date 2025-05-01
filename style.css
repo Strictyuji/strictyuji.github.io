@@ -1,30 +1,46 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <title>語意標記網頁範例</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="box">
-    <h1>這是標題區</h1>
-  </header>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <nav class="box">
-    <ul>
-      <li><a href="#">選單 1</a></li>
-      <li><a href="#">選單 2</a></li>
-      <li><a href="#">選單 3</a></li>
-    </ul>
-  </nav>
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
 
-  <main class="box">
-    <h2>主內容區</h2>
-    <p>這裡是主要的網頁內容。</p>
-  </main>
+/* 共用 box 樣式 */
+.box {
+  border: 2px solid #333;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
 
-  <footer class="box">
-    <p>這是頁尾區</p>
-  </footer>
-</body>
-</html>
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
