@@ -20,8 +20,8 @@ body {
   background-color: #0000;
 }
 
-/* 共用 box 樣式 */
-.tit {
+
+.tit {          /* 標題文字,邊框格式*/
   color: #87ceeb;
   border: 0px solid #333;
   background-color: #9932cc;
@@ -30,7 +30,7 @@ body {
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-.sub {
+.sub {          /* 選單文字,邊框格式*/
   border: 2px solid #333;
   background-color: #fff;
   padding: 1em;
@@ -38,7 +38,7 @@ body {
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-.con {
+.con {          /* 主內容文字,邊框格式*/
   border: 2px solid #333;
   background-color: #fff;
   padding: 1em;
@@ -46,7 +46,7 @@ body {
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
-.tai {
+.tai {          /* 底部文字,邊框格式*/
   border: 2px solid #333;
   background-color: #fff;
   padding: 1em;
