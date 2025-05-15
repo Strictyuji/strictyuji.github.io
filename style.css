@@ -20,6 +20,10 @@ body {
   background-color: #0000;
 }
 
+li {
+  margin-bottom: 10px; /* 調整數值來改變間距 */
+}
+
 
 .tit {          /* 標題文字,邊框格式*/
   .box {
