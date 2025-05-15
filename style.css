@@ -26,7 +26,6 @@ li {
 
 
 .tit {          /* 標題文字,邊框格式*/
-  .box {
   background-image: url('1.png');
   background-size: cover;       
   background-position: center;  
