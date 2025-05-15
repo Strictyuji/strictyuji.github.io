@@ -22,6 +22,7 @@ body {
 
 li {
   margin-bottom: 30px; /* 調整數值來改變間距 */
+  font-size: 20px;
 }
 
 
