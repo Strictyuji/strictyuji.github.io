@@ -38,6 +38,9 @@ li {
 }
 
 .sub {          /* 選單文字,邊框格式*/
+  background-image: url('1.jpg');
+  background-size: cover;       
+  background-position: center;  
   border: 2px solid #333;
   background-color: #fff;
   padding: 1em;
