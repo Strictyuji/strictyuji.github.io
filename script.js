@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
   links.forEach(link => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
+
       const src = this.dataset.src;
 
       if (src) {
-        // 將 .con 區塊的內容清空並插入新 video 標籤
         contentArea.innerHTML = `
           <video id="videoPlayer" width="100%" height="100%" controls autoplay>
             <source src="${src}" type="video/mp4">
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </video>
         `;
       } else {
-        contentArea.innerHTML = "<p>找不到影片來源。</p>";
+        contentArea.innerHTML = "<p>無影片可播放</p>";
       }
     });
   });
