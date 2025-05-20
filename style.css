@@ -25,6 +25,11 @@ li {
   font-size: 20px;
 }
 
+ul {
+  width: fit-content;  /* 或你可以寫 200px 等固定寬度 */
+  margin: 0 auto;      /* 左右自動，置中 */
+}
+
 
 .tit {          /* 標題文字,邊框格式*/
   background-image: url('2.png');
