@@ -1,20 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".video-link");
-  const player = document.getElementById("videoPlayer");
+  const contentArea = document.getElementById("content-area");
 
   links.forEach(link => {
     link.addEventListener("click", function (e) {
-      e.preventDefault(); // 防止連結跳頁
+      e.preventDefault();
       const src = this.dataset.src;
 
-      player.pause();
-      player.removeAttribute("src");
-      player.load();
-
       if (src) {
-        player.src = src;
-        player.load();
-        // player.play(); // 如果你想自動播放，可取消註解
+        // 將 .con 區塊的內容清空並插入新 video 標籤
+        contentArea.innerHTML = `
+          <video id="videoPlayer" width="100%" height="100%" controls autoplay>
+            <source src="${src}" type="video/mp4">
+            您的瀏覽器不支援影片播放。
+          </video>
+        `;
+      } else {
+        contentArea.innerHTML = "<p>找不到影片來源。</p>";
       }
     });
   });
