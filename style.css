@@ -33,7 +33,7 @@ ul {
 
 .tit {          /* 標題文字,邊框格式*/
   background-image: url('2.jpg');
-  background-size: contain;       
+  background-size: cover;       
   background-position: center;
   font-size: 25px;
   color: #87ceeb;
