@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (src) {
         contentArea.innerHTML = `
-          <video id="videoPlayer" width="100%" height="100%" controls autoplay>
+          <video id="videoPlayer" width="70%" height="70%" controls autoplay>
             <source src="${src}" type="video/mp4">
             您的瀏覽器不支援影片播放。
           </video>
