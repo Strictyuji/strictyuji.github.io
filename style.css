@@ -92,25 +92,40 @@ footer {
 
 
 @media (max-width: 768px) {
+  /* ✅ 將整體排版變成單欄（垂直堆疊） */
   body {
+    display: grid;
     grid-template-areas:
       "header"
       "nav"
       "main"
       "footer";
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
   }
-    .sub {
+
+  /* ✅ 側邊欄與主區塊填滿寬度 */
+  nav, main {
+    width: 100%;
+  }
+
+  /* ✅ 選單與內容內縮、變小字體 */
+  .sub, .con {
     font-size: 16px;
     padding: 0.8em;
     border-radius: 6px;
+    box-shadow: none;
   }
 
-  /* ✅ .con 區塊在手機上縮小字體與間距 */
-  .con {
-    font-size: 16px;
-    padding: 0.8em;
+  /* ✅ 影片容器調整為全寬比例縮放 */
+  .video-wrapper {
+    width: 95%;
+    padding-top: 56.25%;
+    margin: 0 auto;
+  }
+
+  .video-wrapper video {
     border-radius: 6px;
+    box-shadow: none;
   }
-
 }
