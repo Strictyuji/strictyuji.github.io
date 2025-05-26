@@ -100,4 +100,17 @@ footer {
       "footer";
     grid-template-columns: 1fr;
   }
+    .sub {
+    font-size: 16px;
+    padding: 0.8em;
+    border-radius: 6px;
+  }
+
+  /* ✅ .con 區塊在手機上縮小字體與間距 */
+  .con {
+    font-size: 16px;
+    padding: 0.8em;
+    border-radius: 6px;
+  }
+
 }
