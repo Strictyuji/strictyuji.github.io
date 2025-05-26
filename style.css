@@ -103,7 +103,7 @@ footer {
     padding: 0.8em;
     border-radius: 6px;
     box-shadow: none;
-    height: 300px;     /* ← 固定高度，可調整數值 */
+    height: 200px;     /* ← 固定高度，可調整數值 */
     overflow: auto;    /* ← 內容多時可捲動 */
   }
 
