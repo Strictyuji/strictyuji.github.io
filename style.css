@@ -87,6 +87,7 @@ footer {
   text-align: center;
 }
 
+
 @media (max-width: 768px) {
   /* ✅ 側邊欄與主區塊填滿寬度 */
   nav, main {
