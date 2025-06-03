@@ -1,23 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll(".video-link");
-  const contentArea = document.getElementById("content-area");
+// 取得所有選單的 <a> 元素
+const menuLinks = document.querySelectorAll('.sub ul li a');
+// 取得主內容區
+const contentArea = document.querySelector('.con');
 
-  links.forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
+menuLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault(); // 阻止預設跳轉
+    const newContent = link.getAttribute('data-content');
 
-      const src = this.dataset.src;
-
-      if (src) {
-        contentArea.innerHTML = `
-          <video id="videoPlayer" width="100%" height="100%" controls>
-            <source src="${src}" type="video/mp4">
-            您的瀏覽器不支援影片播放。
-          </video>
-        `;
-      } else {
-        contentArea.innerHTML = "<p>無影片可播放</p>";
-      }
-    });
+    // 更新主內容區內容
+    contentArea.innerHTML = `
+      <h2>主內容區</h2>
+      <p>${newContent}</p>
+    `;
   });
 });
